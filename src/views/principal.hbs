@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <title>Baskout</title>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/principal.css">
+    <script defer src="/js/principal.js"></script>
+</head>
+<body>
+    <div id="myModal" class="{{{login}}}">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="logo">
+                    <div class="traco"></div>
+                    <div id="texto"><input type="button" value="Baskout"></div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Para acessar o site você deve fazer login!</p>
+                <div class="campo">
+                    <input type="email" id="email" placeholder="Digite seu email">
+                    <div class="linha"></div>
+                </div>
+                <div class="campo">
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <div class="linha"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input id="cadastro" class="cadastro" type="button" value="Cadastrar">
+                <input id="login" class="login" type="button" value="Login">
+            </div>
+        </div>
+    </div>
+    <header class="top">
+        <div class="logo">
+            <div class="traco"></div>
+            <a href="/"><div id="texto"><input type="button" value="Baskout"></div></a>
+        </div>
+        <div class="home">
+            <a href="/"><input type="button" value="Home"></a>
+        </div>
+        <div class="criador">
+            <a href="/criador"><input type="button" value="Criador"></a>
+        </div>
+        <div class="blog">
+            <a href="/blog"><input type="button" value="ADMIN"></a>
+        </div>
+    </header>
+    <main class="center">
+        <div class="apresentacao">
+            <h1 class="baskout">BASKOUT</h1>
+            <h2 class="subtitle">Sports Blog & Experience</h3>
+        </div>
+        <div class="relative">
+            <div class="post1">
+                <div class="titulo">
+                    <p>Apresentação</p>
+                </div>
+                <div class="content">
+                    <div class="imagem">
+                        <img src="/assets/images/Kobe Abertura.jpg">
+                    </div>
+                    <div class="resumo">
+                        <a href="/apresentacao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus velit dolorem suscipit, est eum quod consequatur ea officia impedit itaque reprehenderit minus assumenda incidunt, nisi aut laudantium! Amet, nostrum corrupti?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="postsContainer" class="allposts">
+            
+        </div>
+    </main>
+</body>
+</html>

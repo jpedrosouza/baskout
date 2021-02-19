@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <title>Baskout</title>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <script defer src="/js/blog.js"></script>
+</head>
+
+<body>
+    <header class="top">
+        <div id="logo" class="logo {{{admin}}}">
+            <div class="traco"></div>
+            <a href="/"><div id="texto"><input type="button" value="Baskout"></div></a>
+        </div>
+        <div class="home">
+            <a href="/"><input type="button" value="Home"></a>
+        </div>
+        <div class="criador">
+            <a href="/criador"><input type="button" value="Criador"></a>
+        </div>
+        <div class="blog">
+            <a href="/blog"><input type="button" value="ADMIN"></a>
+        </div>
+    </header>
+    <main class="center">
+        <div class="criar">
+            <form class="form" action="/post/create-post" method="POST" enctype="multipart/form-data">
+                <div class="title">
+                    <textarea required name="title" id="title" placeholder="Digite seu titulo"></textarea>
+                </div>
+                <div class="subtitle">
+                    <textarea required name="subtitle" id="subtitle" placeholder="Digite seu subtitulo"></textarea>
+                </div>
+                <div class="texto">
+                    <textarea required name="content" id="text" placeholder="Digite seu paragrafo"></textarea>
+                </div>
+                <div class="foto">
+                    <input required type="file" name="filetoupload" accept="image/png, image/jpg, image/jpeg, image/gif">
+                    <input id="finish" type="submit" value="Finalizar">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

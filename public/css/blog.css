@@ -1,0 +1,160 @@
+.criar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100vh;
+    background: #f8f7f1;
+}
+
+.visualizar {
+    max-width: 50%;
+    flex-grow: 1;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.center {
+    flex-direction: row;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    background: #e7e6e1;
+    padding: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+textarea:hover {
+    background: #d8d7d3;
+}
+
+.texto textarea {
+    width: 80%;
+    height: 100%;
+}
+
+.title textarea,
+.subtitle textarea {
+    width: 80%;
+    height: 100%;
+}
+
+.texto {
+    height: 40%;
+    margin-bottom: 0;
+}
+
+.title,
+.subtitle,
+.texto {
+    display: flex;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title,
+.subtitle {
+    height: 7%;
+}
+
+.title input,
+.texto input,
+.subtitle input {
+    margin: 20px;
+    border: none;
+    background: none;
+    color: #474747;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.title input:hover,
+.subtitle input:hover,
+.texto input:hover {
+    color: #e75805;
+    transform: scale(1.1);
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto input {
+    border: none;
+    background: none;
+    color: #474747;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.foto input:hover {
+    color: #e75805;
+    transform: scale(1.1);
+}
+
+p {
+    text-indent: 4em;
+    text-align: justify;
+    color: #474747;
+}
+
+.visu-content img {
+    max-height: 60vh;
+    max-width: 50%;
+}
+
+#finish {
+    margin: 10px;
+    border: none;
+    background: none;
+    color: #474747;
+    font-size: 2em;
+}
+
+#finish:hover {
+    color: #e75805;
+    transform: scale(1.1);
+}
+
+.form {
+    width: 60%;
+    height: 87%;
+    margin-top: 13vh;
+    align-self: center;
+}
+
+div h1 {
+    color: #363636;
+    text-align: center;
+    font-size: 3em;
+}
+
+div h2 {
+    text-indent: 0.5em;
+    text-align: left;
+    color: #707070;
+    font-size: 2em;
+}
+
+.paragrafo {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafo div {
+    display: flex;
+    flex-direction: column;
+}
