@@ -1,3 +1,5 @@
+// Realiza a criação do modelo da tabela 'users' no banco de dados.
+
 module.exports = (sequelize, DataType) => {
     const UserModel = sequelize.define('users', {
         'name': DataType.STRING,

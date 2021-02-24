@@ -2,6 +2,8 @@
     getPosts();
 }());
 
+// Obtem todos os posts no banco de dados e exibe na interface, 
+// os ordenando através da data e hora em que foram criados.
 async function getPosts() {
     const postsContainer = document.getElementById('postsContainer');
 
@@ -21,7 +23,7 @@ async function getPosts() {
                             <div class="titulo" style="text-align: center;">
                                 <p>${element['title']}</p>
                             </div>
-                        <a href="/apresentacao" style="padding-top: 30px;">${element['content']}</a>
+                        <a style="padding-top: 30px;">${element['content']}</a>
                         </div>
                     </div>
                 </div>
@@ -47,6 +49,7 @@ document.getElementById('login').addEventListener('click', () => {
     authUser(email, password);
 });
 
+// Realiza a autenticação do usuário juntamente com o servidor.
 async function authUser(email, password) {
     await fetch('/user/login', {
             method: 'POST',

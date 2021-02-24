@@ -1,3 +1,6 @@
+// Este arquivo é responsável por criar todas as querys com o banco de 
+// dados em relação a tabela 'users'.
+
 const db = require('../database');
 
 exports.createUser = (user) => {

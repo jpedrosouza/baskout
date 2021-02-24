@@ -1,3 +1,6 @@
+// Este arquivo é responsável por criar todas as querys com o banco de 
+// dados em relação a tabela 'posts'.
+
 const db = require('../database');
 
 exports.createPost = (post) => {

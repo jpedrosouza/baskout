@@ -15,6 +15,9 @@ app.engine('.hbs', handlebars({ extname: '.hbs', defaultLayout: false }));
 app.set('views', __dirname + '/../../views');
 app.set('view engine', '.hbs');
 
+// Cria um post no Blog e realiza o upload da imagem para o servidor, além
+// de salvar todas as informações tanto da imagem quanto do post no banco
+// de dados.
 app.post('/create-post', async(req, res) => {
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
@@ -44,8 +47,13 @@ app.post('/create-post', async(req, res) => {
                 userId: userId
             });
 
-            // O código 1 informa que a operação foi realizada com sucesso
-            return res.render('principal');
+            var login = 'modal';
+
+            if (req.session.login != null && req.session.login) {
+                login = 'none';
+            }
+
+            return res.render('principal', { login: login });
         });
     });
 });

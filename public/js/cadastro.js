@@ -10,6 +10,7 @@ document.getElementById('cancelar').addEventListener('click', () => {
     window.location.href = '/';
 });
 
+// Realiza o cadastro de um usuário juntamente com o servidor.
 async function registerUser(name, email, password) {
     await fetch('/user/create-user', {
         method: 'POST',

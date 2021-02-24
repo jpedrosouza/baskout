@@ -24,8 +24,6 @@ app.get('/', (req, res) => {
 app.get('/blog', async(req, res) => {
     var admin = false;
 
-    console.log('AAAAAAA: ' + req.session.login)
-
     if (req.session.login != undefined && req.session.login != null && req.session.login) {
         var email = req.session.email;
 

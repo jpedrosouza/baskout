@@ -17,7 +17,14 @@ app.use(bodyParser.text());
 app.use('/', routes);
 
 app.listen(7080, () => {
-    // db.sequelize.sync({ force: true });
+    // Sincroniza e reseta o banco de dados, apagando e recriando todas as 
+    // tabelas criadas.
+
+    // db.sequelize.sync({ force: true }); 
+
+    // Sincroniza o banco de dados mas não o reseta e nem apaga as tabelas
+    // existentes, apenas cria as tabelas se elas não existirem.
+
     db.sequelize.sync({});
 
     console.log(`Server listening at https://localhost:7080`);

@@ -1,6 +1,9 @@
 require('dotenv/config');
 const Sequelize = require('sequelize');
 
+// Este arquivo realiza a conexão do servidor com o banco de dados, além
+// de ser responsável por criar todas as referenciações.
+
 const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USERNAME, process.env.DB_PASSWORD, {
     host: process.env.DB_HOST,
     dialect: 'mysql'

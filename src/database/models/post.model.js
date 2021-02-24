@@ -1,3 +1,5 @@
+// Realiza a criação do modelo da tabela 'posts' no banco de dados.
+
 module.exports = (sequelize, DataType) => {
     const PostModel = sequelize.define('posts', {
         'title': DataType.STRING,
